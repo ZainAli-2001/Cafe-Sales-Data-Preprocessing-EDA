@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project focuses on cleaning, preprocessing, and analyzing a cafe sales dataset containing intentionally introduced data quality issues. The goal is to demonstrate practical data cleaning techniques, exploratory data analysis (EDA), and business insight generation using Python and Pandas.
+This project focuses on cleaning, preprocessing, and analyzing a synthetic cafe sales dataset containing intentionally introduced data quality issues. The goal is to demonstrate practical data cleaning techniques, exploratory data analysis (EDA), and business insight generation using Python and Pandas.
 
 ## Dataset
 
@@ -48,6 +48,16 @@ The dataset was designed specifically for practicing data cleaning and preproces
 
 ---
 
+## Installation & Requirements
+
+To install the required dependencies for running this project:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## Data Cleaning Process
 
 ### Cleaning Steps Performed
@@ -89,58 +99,43 @@ Explored relationships between:
 
 ---
 
-## Key Insights
+## Key Visualization
 
-The analysis of cafe sales data revealed several important business insights related to product performance, revenue distribution, and sales trends.
+Place your exported chart image in:
 
----
+```text
+images/product_performance.png
+```
 
-### Revenue vs Product Performance
+This visualization compares product popularity (sales volume) against revenue generation.
 
-<img src="images/product_performance.png" width="1000"/>
+### Insights
 
-- Salad generated the highest total revenue despite lower sales volume.
-- Juice was the most frequently purchased item but did not generate the highest revenue.
--High-priced items (Salad, Sandwich, Smoothie) contributed disproportionately to overall revenue.
-
----
-
-### Sales Volume Distribution
-
-<img src="images/daily_sales.png" width="500" height="500"/>
-
-- Sales show noticeable fluctuations across different days.
-- Certain days consistently show higher customer activity, indicating peak business periods.
-- Stable baseline demand is observed throughout the dataset.
+- Juice recorded the highest sales volume, indicating strong customer demand.
+- Salad generated the highest revenue despite selling fewer units than Juice.
+- Higher-priced products such as Salad, Sandwich, and Smoothie contributed disproportionately to total revenue.
+- Lower-priced products such as Coffee, Tea, and Cookie achieved reasonable sales volumes but generated less revenue due to their lower unit prices.
+- The most frequently purchased item was not necessarily the highest revenue-generating item.
 
 ---
 
-### Monthly Sales Trends
+## Key Findings
 
-<img src="images/monthly_sales.png" width="500" height="500"/>
+### Revenue Leaders
 
-- Sales remained relatively stable throughout the year.
-- June and October recorded the strongest performance months.
-- February showed the lowest sales activity, indicating a seasonal dip.
+- Salad generated the highest total revenue.
+- Sandwich and Smoothie were the next strongest revenue contributors.
 
----
+### Most Popular Products
 
-### Feature Relationships (Correlation)
+- Juice recorded the highest quantity sold.
+- Coffee ranked second in total units sold.
 
-<img src="images/correlation.png" width="500" height="500"/>
+### Sales Trends
 
-- Strong positive correlation exists between Quantity and Total Spent.
-- Price Per Unit significantly influences revenue generation.
-- No strong negative correlations were observed, indicating consistent purchasing behavior.
-
----
-
-## Business Summary
-
-- Revenue is driven more by high-value items than high-volume items
-- Customer demand is consistent but slightly seasonal
-- A small number of products contribute to a large portion of revenue (Pareto-like effect)
-- Optimizing pricing strategy for high-value items can significantly impact revenue growth
+- Revenue remained relatively stable throughout the year.
+- June and October recorded the strongest monthly performance.
+- February showed the lowest monthly sales.
 
 ---
 
@@ -156,7 +151,6 @@ project/
 |   └── product_performance.png
 │
 ├── Cafe_Sales_Data_Cleaning_EDA.ipynb
-└── dirty_cafe_sales.csv
 └── README.md
 ```
 
@@ -173,3 +167,11 @@ project/
 - Business Insight Generation
 - Pandas Data Manipulation
 - Statistical Interpretation
+
+---
+
+## Author
+
+**Zain Ali**
+
+This project was completed as part of a data analytics portfolio to demonstrate practical data cleaning and exploratory data analysis skills using Python.

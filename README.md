@@ -101,11 +101,7 @@ Explored relationships between:
 
 ## Key Visualization
 
-Place your exported chart image in:
-
-```text
-images/product_performance.png
-```
+![Product Performance](images/product_performance.png)
 
 This visualization compares product popularity (sales volume) against revenue generation.
 
